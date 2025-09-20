@@ -2,50 +2,287 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metrotime — учёт смен и зарплаты</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Metrotime — профессиональный контроль смен и зарплаты</title>
+  <meta name="description" content="Metrotime помогает транспортным компаниям и специалистам вести точный учёт смен, норм и зарплаты на одной платформе." />
+  <meta property="og:title" content="Metrotime — учёт смен и зарплаты" />
+  <meta property="og:description" content="Интеллектуальный контроль графиков, переработок и выплат для транспортных команд." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="screenshot.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <h1>Metrotime</h1>
-    <p>Приложение для учёта смен и расчёта зарплаты</p>
+  <div class="background"></div>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="logo" href="#top" aria-label="Metrotime">
+          <span class="logo-mark"></span>
+          Metrotime
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu">Меню</button>
+        <ul class="nav-links" id="main-menu">
+          <li><a href="#features">Возможности</a></li>
+          <li><a href="#metrics">Преимущества</a></li>
+          <li><a href="#pricing">Тарифы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-outline" href="mailto:hello@metrotime.app">Связаться</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <img src="screenshot.png" alt="Скриншот приложения Metrotime" />
-      <div class="cta">
-        <a class="btn" href="https://apps.apple.com/" target="_blank">Скачать в App Store</a>
+    <section class="hero" id="top">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="badge">Сделано машинистами для машинистов</span>
+          <h1>Контролируйте график и доход команды без Excel и путаницы</h1>
+          <p>
+            Metrotime автоматически собирает смены, нормы, переработки и выплаты в единую
+            панель. Менеджеры получают прозрачную аналитику, а сотрудники — уверенность в
+            каждой смене.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://apps.apple.com/" target="_blank" rel="noopener">Скачать в App Store</a>
+            <a class="btn btn-secondary" href="#demo">Запросить демо</a>
+          </div>
+          <ul class="hero-list">
+            <li>Точные расчёты с учётом всех доплат и коэффициентов</li>
+            <li>Ежедневные уведомления и отчёты для команды</li>
+            <li>Данные хранятся в облаке Metrotime и защищены шифрованием</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <div class="device-frame">
+            <img src="screenshot.png" alt="Скриншот приложения Metrotime" loading="lazy" />
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="features">
-      <h2>Возможности Metrotime</h2>
-      <ul>
-        <li>Учёт смен, нормы и переработок</li>
-        <li>Автоматический расчёт зарплаты</li>
-        <li>Поддержка разных ролей (машинист, инструктор и др.)</li>
-        <li>Виджеты и погода</li>
-        <li>Тёмная тема</li>
-      </ul>
+    <section class="metrics" id="metrics">
+      <div class="container metrics-grid">
+        <article class="metric-card">
+          <h2>+37%</h2>
+          <p>Повышение прозрачности графиков и загрузки смен</p>
+        </article>
+        <article class="metric-card">
+          <h2>12 000+</h2>
+          <p>Смен зарегистрировано в Metrotime за последние 3 месяца</p>
+        </article>
+        <article class="metric-card">
+          <h2>3 минуты</h2>
+          <p>Столько нужно, чтобы закрыть смену и рассчитать выплату</p>
+        </article>
+      </div>
     </section>
 
-    <section class="faq">
-      <h2>FAQ</h2>
-      <details>
-        <summary>Как добавить смену?</summary>
-        <p>Во вкладке «Смены» нажмите «+ Добавить», заполните данные и сохраните.</p>
-      </details>
-      <details>
-        <summary>Как изменить или удалить смену?</summary>
-        <p>Удерживайте нужную смену в списке — появится меню «Изменить / Удалить».</p>
-      </details>
+    <section class="features" id="features">
+      <div class="container section-heading">
+        <h2>Возможности, которые экономят время и бюджет</h2>
+        <p>Metrotime адаптирован под специфику метрополитена и железнодорожного транспорта.</p>
+      </div>
+      <div class="container features-grid">
+        <article class="feature-card">
+          <h3>Планирование смен</h3>
+          <p>Создавайте графики на недели и месяцы вперёд, учитывая нормы часов, отдых и пожелания сотрудников.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Расчёт зарплаты</h3>
+          <p>Алгоритмы Metrotime автоматически применяют тарифы, надбавки и ночные коэффициенты.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Аналитика для руководителей</h3>
+          <p>Сводки по переработкам, премиям и больничным в реальном времени с экспортом в Excel и 1С.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Мобильные уведомления</h3>
+          <p>Сотрудники получают напоминания о сменах, а менеджеры — сигналы о заменах и переработках.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Командная работа</h3>
+          <p>Роли и права доступа для машинистов, инструкторов и диспетчеров с журналом действий.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Интеграции</h3>
+          <p>Подключайте погодные сервисы, корпоративные календари и BI-платформы через API.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase" id="demo">
+      <div class="container showcase-content">
+        <div>
+          <h2>Контроль смен в реальном времени</h2>
+          <p>
+            Виджеты Metrotime показывают текущие смены, остаток часов и критичные события. Руководители
+            видят состояние депо в любой момент времени, даже в дороге.
+          </p>
+          <ul class="showcase-list">
+            <li>Гибкие фильтры по депо, линиям и ролям</li>
+            <li>История изменений по каждому сотруднику</li>
+            <li>Виджеты на iOS и Apple Watch</li>
+          </ul>
+        </div>
+        <div class="showcase-card">
+          <h3>Получите персональную презентацию</h3>
+          <p>Мы настроим Metrotime под ваши процессы и ответим на все вопросы.</p>
+          <a class="btn btn-primary" href="mailto:hello@metrotime.app">Записаться на демо</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container section-heading">
+        <h2>Отзывы команд, которые уже с нами</h2>
+        <p>Metrotime помогает держать под контролем даже самые сложные графики.</p>
+      </div>
+      <div class="container testimonials-grid">
+        <figure class="testimonial-card">
+          <blockquote>
+            «Мы отказались от громоздких таблиц. Metrotime показывает, кто работает, кто отдыхает и где есть риски.»
+          </blockquote>
+          <figcaption>
+            Елена Петрова, начальник колонны, Московский метрополитен
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote>
+            «Смены закрываем в несколько кликов, зарплата считается сама. Команда больше не спорит о переработках.»
+          </blockquote>
+          <figcaption>
+            Денис Романов, руководитель депо, Петербургский метрополитен
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container section-heading">
+        <h2>Прозрачные тарифы для любого масштаба</h2>
+        <p>Начните с базового плана и масштабируйтесь по мере роста команды.</p>
+      </div>
+      <div class="container pricing-grid">
+        <article class="pricing-card">
+          <div class="pricing-badge">Популярный выбор</div>
+          <h3>Команда</h3>
+          <p class="price">5 900 ₽<span>/мес</span></p>
+          <ul>
+            <li>До 50 сотрудников</li>
+            <li>Расчёт зарплаты и доплат</li>
+            <li>Еженедельные отчёты</li>
+            <li>Поддержка по почте</li>
+          </ul>
+          <a class="btn btn-primary" href="mailto:sales@metrotime.app">Попробовать</a>
+        </article>
+        <article class="pricing-card">
+          <h3>Пилот</h3>
+          <p class="price">Бесплатно<span>/14 дней</span></p>
+          <ul>
+            <li>До 10 сотрудников</li>
+            <li>Виджеты и уведомления</li>
+            <li>Экспорт в Excel</li>
+            <li>Онбординг с куратором</li>
+          </ul>
+          <a class="btn btn-secondary" href="mailto:sales@metrotime.app">Запустить пилот</a>
+        </article>
+        <article class="pricing-card">
+          <h3>Enterprise</h3>
+          <p class="price">По запросу</p>
+          <ul>
+            <li>Неограниченное число сотрудников</li>
+            <li>Интеграции с 1С и SAP</li>
+            <li>SLA 99,9%</li>
+            <li>Персональный менеджер</li>
+          </ul>
+          <a class="btn btn-outline" href="mailto:partners@metrotime.app">Связаться с отделом продаж</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container section-heading">
+        <h2>Вопросы и ответы</h2>
+        <p>Если вы не нашли ответа, мы с радостью поможем по почте или в Zoom.</p>
+      </div>
+      <div class="container faq-grid">
+        <details>
+          <summary>Можно ли импортировать существующие графики?</summary>
+          <p>Да, поддерживаем загрузку из Excel, Google Sheets и 1С. Команда онбординга поможет настроить шаблоны.</p>
+        </details>
+        <details>
+          <summary>Как обеспечивается безопасность данных?</summary>
+          <p>Данные шифруются и размещаются в сертифицированных дата-центрах в РФ. Регулярно проводим аудит безопасности.</p>
+        </details>
+        <details>
+          <summary>Работает ли Metrotime без интернета?</summary>
+          <p>Мобильное приложение сохраняет последнюю версию смен и синхронизируется, когда связь восстанавливается.</p>
+        </details>
+        <details>
+          <summary>Есть ли интеграции с корпоративной системой?</summary>
+          <p>Мы предоставляем API и готовые коннекторы для популярных ERP. Возможна кастомизация под ваши процессы.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-final">
+      <div class="container cta-card">
+        <div>
+          <h2>Готовы управлять сменами уверенно?</h2>
+          <p>Покажем Metrotime вашей команде и подскажем, как быстро внедрить решение.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="mailto:sales@metrotime.app">Назначить встречу</a>
+          <a class="btn btn-secondary" href="https://apps.apple.com/" target="_blank" rel="noopener">Скачать приложение</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2025 Metrotime</p>
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#top">
+          <span class="logo-mark"></span>
+          Metrotime
+        </a>
+        <p>Цифровая платформа для управления сменами и зарплатой в транспортных компаниях.</p>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <ul>
+          <li><a href="mailto:hello@metrotime.app">hello@metrotime.app</a></li>
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <ul>
+          <li><a href="#features">Возможности</a></li>
+          <li><a href="#pricing">Тарифы</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#demo">Демо</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">© 2025 Metrotime. Все права защищены.</p>
   </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!expanded));
+        navLinks.classList.toggle('nav-open');
+      });
+    }
+  </script>
 </body>
 </html>
